@@ -1,0 +1,27 @@
+{
+  "name": "tanuj-arora-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio website with automatic PDF resume updates",
+  "main": "watcher.js",
+  "scripts": {
+    "start": "node watcher.js",
+    "watch": "node watcher.js",
+    "dev": "node watcher.js",
+    "backup": "node -e \"const fs=require('fs');const p=require('path');const d=new Date().toISOString().replace(/[:.]/g,'-');fs.copyFileSync('index.html',p.join('backups',\\`index-\\${d}.html\\\"));console.log('Backup created: index-'+d+'.html');\""
+  },
+  "keywords": [
+    "portfolio",
+    "resume",
+    "auto-update",
+    "watcher"
+  ],
+  "author": "Tanuj Arora",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.4.1"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
