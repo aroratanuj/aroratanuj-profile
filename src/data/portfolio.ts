@@ -7,6 +7,7 @@ export const experiences: Experience[] = [
     position: 'Product Manager',
     duration: 'August 2024 – Present',
     description: 'Strategic digital transformation company, AWS Premier Tier Services Partner focused on cloud-native SaaS solutions. Driving product roadmap for Professional Services Automation (PSA) B2B SaaS platform.',
+    website: 'https://www.sourcefuse.com/',
     achievements: [
       'Drive product roadmap for a Professional Services Automation (PSA) B2B SaaS platform',
       'Lead sprint planning, backlog management, and retrospectives for cross-functional teams',
@@ -24,6 +25,7 @@ export const experiences: Experience[] = [
     position: 'Product Manager (Remote)',
     duration: 'July 2023 – August 2024',
     description: 'Enterprise supplier management via no-code/low-code B2B SaaS, serving multi-ERP customers. Led product launch strategy for enhanced Supplier Experience Portal (SXP).',
+    website: 'https://www.hicx.com/',
     achievements: [
       'Led product launch strategy for enhanced Supplier Experience Portal (SXP)',
       'Collaborated with product marketing on sales enablement and market positioning',
@@ -38,6 +40,7 @@ export const experiences: Experience[] = [
     position: 'Product Manager',
     duration: 'October 2016 – July 2023',
     description: 'Fintech/AP automation company focused on invoice processing, digitization, and country compliance for enterprise CFOs. Owned product roadmap for Travel & Expense (T&E) management suite across 3 products.',
+    website: 'https://www.basware.com/en/',
     achievements: [
       'Owned product roadmap for Travel & Expense (T&E) management suite across 3 products',
       'Led cross-functional collaboration with UX, engineering, and customer experience teams',
@@ -52,6 +55,7 @@ export const experiences: Experience[] = [
     position: 'Lead Software Engineer',
     duration: 'November 2008 – September 2016',
     description: 'Epic Owner for release verification, sprint testing, and product closure. Built automated testing frameworks for web and desktop applications.',
+    website: 'https://www.basware.com/en/',
     achievements: [
       'Epic Owner for release verification, sprint testing, and product closure',
       'Built automated testing frameworks for web and desktop applications',
