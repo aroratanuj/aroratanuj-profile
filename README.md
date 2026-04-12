@@ -181,7 +181,7 @@ This project is licensed under the MIT License.
 
 **Tanuj Arora**
 - LinkedIn: [linkedin.com/in/tanuj-arora](https://linkedin.com/in/tanuj-arora)
-- Email: tanuj.arora@example.com
+- Email: tanujarora.mca@gmail.com
 
 ## 🙏 Acknowledgments
 
