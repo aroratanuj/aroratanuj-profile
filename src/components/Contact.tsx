@@ -1,4 +1,4 @@
-import { socialLinks } from '../data/portfolio';
+import { socialLinks, contactInfo } from '../data/contact';
 
 const Contact = () => {
   return (
@@ -19,8 +19,8 @@ const Contact = () => {
             <a
               key={index}
               href={link.url}
-              target={link.platform === 'WhatsApp' ? '_blank' : undefined}
-              rel={link.platform === 'WhatsApp' ? 'noopener noreferrer' : undefined}
+              target={link.platform === 'WhatsApp' || link.platform === 'LinkedIn' ? '_blank' : undefined}
+              rel={link.platform === 'WhatsApp' || link.platform === 'LinkedIn' ? 'noopener noreferrer' : undefined}
               className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 text-center no-underline"
             >
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -47,9 +47,9 @@ const Contact = () => {
               </div>
               <h3 className="font-bold text-lg mb-1">{link.platform}</h3>
               <p className="text-white/80 text-sm">
-                {link.platform === 'Email' && 'tanutarora.mca@gmail.com'}
-                {link.platform === 'Phone' && '+91 950111-2976'}
-                {link.platform === 'WhatsApp' && '+91 9418054201'}
+                {link.platform === 'Email' && contactInfo.email}
+                {link.platform === 'Phone' && contactInfo.phone}
+                {link.platform === 'WhatsApp' && contactInfo.whatsapp}
                 {link.platform === 'LinkedIn' && 'Connect with me'}
               </p>
             </a>
@@ -58,18 +58,18 @@ const Contact = () => {
 
         <div className="text-center">
           <a
-            href="mailto:tanutarora.mca@gmail.com"
+            href={`mailto:${contactInfo.email}`}
             className="text-2xl font-bold hover:text-gray-200 transition-colors duration-300 no-underline inline-block"
           >
-            tanujarora.mca@gmail.com
+            {contactInfo.email}
           </a>
           <div className="mt-2 flex items-center justify-center gap-2 text-white/80">
-            <span>Chandigarh, India</span>
+            <span>{contactInfo.location}</span>
             <span>|</span>
-            <a href="tel:+919501112976" className="hover:text-white no-underline">+91 950111-2976</a>
+            <a href={`tel:${contactInfo.phone.replace(/\s/g, '')}`} className="hover:text-white no-underline">{contactInfo.phone}</a>
             <span>|</span>
             <a
-              href="https://wa.me/919418054201"
+              href={`https://wa.me/${contactInfo.whatsapp.replace(/\D/g, '')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white no-underline flex items-center gap-1"

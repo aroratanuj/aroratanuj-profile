@@ -2,19 +2,24 @@ import { certifications } from '../data/portfolio';
 
 const Certifications = () => {
   return (
-    <section className="py-36 bg-gray-50">
-      <div className="max-w-[1100px] mx-auto px-8">
-        <h2 className="text-[2.2rem] font-extrabold mb-16 tracking-tight">
+    <section className="py-16 bg-white">
+      <div className="max-w-[1200px] mx-auto px-6">
+        <h2 className="text-3xl font-extrabold text-gray-900 mb-8">
           Certifications
         </h2>
 
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {certifications.map((cert, index) => (
             <div
               key={index}
-              className="p-8 bg-white border border-gray-200 rounded-2xl hover:border-primary hover:-translate-y-1 hover:shadow-lg transition-all duration-300 text-center"
+              className="p-6 bg-gray-50 border border-gray-200 rounded-xl hover:border-primary hover:shadow-lg transition-all duration-300 text-center"
             >
-              <h4 className="text-[1.1rem] font-bold text-gray-900 mb-2">
+              <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h4 className="text-base font-bold text-gray-900 mb-2">
                 {cert.name}
               </h4>
               <p className="text-primary text-xs font-bold uppercase mb-1">

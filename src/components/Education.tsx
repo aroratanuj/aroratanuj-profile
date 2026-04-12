@@ -13,9 +13,9 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-24 bg-gray-50">
+    <section id="education" className="py-16 bg-white">
       <div className="max-w-[1200px] mx-auto px-6">
-        <h2 className="text-3xl font-extrabold text-gray-900 mb-12">
+        <h2 className="text-3xl font-extrabold text-gray-900 mb-8">
           Education
         </h2>
 
@@ -23,17 +23,17 @@ const Education = () => {
           {education.map((edu, index) => (
             <div
               key={index}
-              className="p-8 bg-white border border-gray-200 rounded-2xl hover:border-primary hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              className="p-6 bg-gray-50 border border-gray-200 rounded-xl hover:border-primary hover:shadow-lg transition-all duration-300"
             >
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
                   </svg>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">
                     {edu.degree}
                   </h3>
                   <p className="text-primary font-semibold mb-1">

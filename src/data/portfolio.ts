@@ -1,4 +1,5 @@
-import { Experience, Project, Skill, Certification, Metric, SocialLink } from '../types';
+import { Experience, Project, Skill, Certification, Metric } from '../types';
+import { socialLinks as centralizedSocialLinks } from './contact';
 
 export const experiences: Experience[] = [
   {
@@ -136,25 +137,4 @@ export const metrics: Metric[] = [
   { value: '10%', label: 'Customer Churn Reduction' }
 ];
 
-export const socialLinks: SocialLink[] = [
-  {
-    platform: 'LinkedIn',
-    url: 'https://linkedin.com/in/tanuj-arora',
-    icon: 'linkedin'
-  },
-  {
-    platform: 'WhatsApp',
-    url: 'https://wa.me/919418054201',
-    icon: 'whatsapp'
-  },
-  {
-    platform: 'Email',
-    url: 'mailto:tanutarora.mca@gmail.com',
-    icon: 'mail'
-  },
-  {
-    platform: 'Phone',
-    url: 'tel:+919501112976',
-    icon: 'phone'
-  }
-];
+export const socialLinks = centralizedSocialLinks;

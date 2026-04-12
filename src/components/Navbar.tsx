@@ -50,8 +50,14 @@ const Navbar = () => {
     e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
+      // Use scrollIntoView with smooth behavior
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       setActiveSection(id);
+
+      // Remove hash from URL if it exists
+      if (window.location.hash) {
+        window.history.replaceState(null, '', window.location.pathname);
+      }
     }
   };
 
