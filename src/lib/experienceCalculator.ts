@@ -11,6 +11,16 @@ export interface ExperienceSummary {
   formattedText: string;
 }
 
+export function calculateProductManagementExperience(experiences: ExperienceWithDates[]): ExperienceSummary {
+  // Filter only product management positions
+  const pmExperiences = experiences.filter(exp =>
+    exp.position.toLowerCase().includes('product manager') ||
+    exp.position.toLowerCase().includes('product owner')
+  );
+
+  return calculateTotalExperience(pmExperiences);
+}
+
 export function calculateTotalExperience(experiences: ExperienceWithDates[]): ExperienceSummary {
   const now = new Date();
   let totalMonths = 0;
@@ -29,22 +39,13 @@ export function calculateTotalExperience(experiences: ExperienceWithDates[]): Ex
   const years = Math.floor(totalMonths / 12);
   const monthsRemaining = totalMonths % 12;
 
-  let formattedText = '';
-  if (years > 0) {
-    formattedText = `${years}+ Year${years > 1 ? 's' : ''}`;
-    if (monthsRemaining > 0) {
-      formattedText += ` ${monthsRemaining}+ Month${monthsRemaining > 1 ? 's' : ''}`;
-    }
-  } else if (monthsRemaining > 0) {
-    formattedText = `${monthsRemaining}+ Month${monthsRemaining > 1 ? 's' : ''}`;
-  } else {
-    formattedText = '0+ Months';
-  }
+  // Round up to nearest year for display
+  const displayYears = years + (monthsRemaining > 0 ? 1 : 0);
 
   return {
-    totalYears: years,
+    totalYears: displayYears,
     totalMonths: totalMonths,
-    formattedText: formattedText
+    formattedText: `${displayYears}+ Years`
   };
 }
 

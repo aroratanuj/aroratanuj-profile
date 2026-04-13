@@ -3,7 +3,7 @@ import { sourcefuseExperience } from './experience/sourcefuse';
 import { hicxExperience } from './experience/hicx';
 import { baswarePMExperience } from './experience/baswarePM';
 import { baswareEngineerExperience } from './experience/baswareEngineer';
-import { calculateTotalExperience } from '../lib/experienceCalculator';
+import { calculateTotalExperience, calculateProductManagementExperience } from '../lib/experienceCalculator';
 
 // Combine all experiences
 export const experiences = [
@@ -15,9 +15,13 @@ export const experiences = [
 
 // Calculate total experience dynamically
 const experienceSummary = calculateTotalExperience(experiences as any);
+const pmExperienceSummary = calculateProductManagementExperience(experiences as any);
+
 export const totalExperienceText = experienceSummary.formattedText;
 export const totalYears = experienceSummary.totalYears;
 export const totalMonths = experienceSummary.totalMonths;
+export const pmExperienceText = pmExperienceSummary.formattedText;
+export const pmYears = pmExperienceSummary.totalYears;
 
 export const projects: Project[] = [
   {

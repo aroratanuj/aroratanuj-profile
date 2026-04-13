@@ -1,3 +1,5 @@
+import { pmExperienceText, totalExperienceText } from '../data/portfolio';
+
 const About = () => {
   return (
     <section id="about" className="py-24 bg-white">
@@ -10,7 +12,7 @@ const About = () => {
 
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
-                Product Manager specializing in <strong className="text-primary">AI-enabled, analytics-driven, cloud-based products</strong> at scale. Deep expertise in enterprise B2B SaaS platforms, with a focus on transforming complex business workflows into intuitive user experiences.
+                Product Manager with <strong className="text-primary">{totalExperienceText} in IT</strong> and <strong className="text-primary">{pmExperienceText} in product management</strong>. Specializing in <strong className="text-primary">AI-enabled, analytics-driven, cloud-based products</strong> at scale. Deep expertise in enterprise B2B SaaS platforms, with a focus on transforming complex business workflows into intuitive user experiences.
               </p>
 
               <p>
