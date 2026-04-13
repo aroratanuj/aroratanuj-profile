@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('home');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
     { name: 'Home', href: '#', id: 'home' },
@@ -50,20 +51,15 @@ const Navbar = () => {
     e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
-      // Use scrollIntoView with smooth behavior
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       setActiveSection(id);
-
-      // Remove hash from URL if it exists
-      if (window.location.hash) {
-        window.history.replaceState(null, '', window.location.pathname);
-      }
+      setMobileMenuOpen(false); // Close mobile menu on click
     }
   };
 
   return (
     <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 py-4 shadow-sm">
-      <div className="max-w-[1200px] mx-auto px-6 flex justify-between items-center">
+      <div className="max-w-[1200px] mx-auto px-4 md:px-6 flex justify-between items-center">
         <div className="font-extrabold text-lg tracking-tight text-gray-900">
           <a
             href="#"
@@ -73,7 +69,9 @@ const Navbar = () => {
             TA
           </a>
         </div>
-        <ul className="flex gap-6 md:gap-8 items-center">
+
+        {/* Desktop Navigation */}
+        <ul className="hidden md:flex gap-6 md:gap-8 items-center">
           {navLinks.map((link) => {
             const isActive = activeSection === link.id;
             return (
@@ -94,7 +92,51 @@ const Navbar = () => {
             );
           })}
         </ul>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden p-2 text-gray-600 hover:text-primary transition-colors"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            {mobileMenuOpen ? (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            )}
+          </svg>
+        </button>
       </div>
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <div className="md:hidden bg-white border-t border-gray-200 py-4 px-4">
+          <ul className="space-y-2">
+            {navLinks.map((link) => {
+              const isActive = activeSection === link.id;
+              return (
+                <li key={link.name}>
+                  <a
+                    href={link.href}
+                    onClick={(e) => handleNavClick(e, link.id)}
+                    className={`block text-sm font-semibold transition-all duration-300 no-underline py-3 px-4 rounded-lg ${
+                      isActive ? 'bg-primary text-white' : 'text-gray-600 hover:bg-gray-50'
+                    }`}
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };

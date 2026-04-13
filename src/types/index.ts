@@ -5,6 +5,8 @@ export interface Experience {
   description: string;
   achievements: string[];
   website?: string;
+  startDate?: string;
+  endDate?: string;
 }
 
 export interface Project {

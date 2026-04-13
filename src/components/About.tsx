@@ -10,15 +10,15 @@ const About = () => {
 
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
-                Product Manager with <strong className="text-primary">16+ years of IT experience</strong> and <strong className="text-primary">7+ years in product ownership and product management</strong> for enterprise B2B SaaS platforms.
+                Product Manager specializing in <strong className="text-primary">AI-enabled, analytics-driven, cloud-based products</strong> at scale. Deep expertise in enterprise B2B SaaS platforms, with a focus on transforming complex business workflows into intuitive user experiences.
               </p>
 
               <p>
-                Deep expertise in Revenue Cycle-like operational workflows, requirements analysis, backlog ownership, sprint planning, and feature acceptance. Skilled at translating complex business needs into epics, user stories, and acceptance criteria.
+                Proven track record of delivering <strong className="text-primary">high-impact product launches</strong> that drive measurable business outcomes. From reducing customer churn by 10% to cutting expense processing time by 44%, I focus on results that matter to customers and stakeholders.
               </p>
 
               <p>
-                Acts as proxy PM for offshore scrum teams. Strong collaborator across product, engineering, data, and operations with a track record of driving on-time, high-quality releases.
+                Acts as strategic bridge between business vision and technical execution. Strong collaborator across product, engineering, data, and operations teams, ensuring alignment and driving on-time, high-quality releases that exceed expectations.
               </p>
             </div>
 
@@ -50,48 +50,48 @@ const About = () => {
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 <div>
-                  <div className="font-bold">16+ Years</div>
-                  <div className="text-sm text-white/80">IT Experience</div>
+                  <div className="font-bold">4 Products</div>
+                  <div className="text-sm text-white/80">Successfully Launched</div>
                 </div>
               </div>
 
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                   </svg>
                 </div>
                 <div>
-                  <div className="font-bold">7+ Years</div>
-                  <div className="text-sm text-white/80">Product Management</div>
+                  <div className="font-bold">10% Churn</div>
+                  <div className="text-sm text-white/80">Reduction Achieved</div>
                 </div>
               </div>
 
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 <div>
-                  <div className="font-bold">4 Companies</div>
-                  <div className="text-sm text-white/80">Industry Experience</div>
+                  <div className="font-bold">44% Faster</div>
+                  <div className="text-sm text-white/80">Process Efficiency</div>
                 </div>
               </div>
 
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
                 </div>
                 <div>
-                  <div className="font-bold">4 Certifications</div>
-                  <div className="text-sm text-white/80">Professional Credentials</div>
+                  <div className="font-bold">95%</div>
+                  <div className="text-sm text-white/80">Customer Satisfaction</div>
                 </div>
               </div>
             </div>
