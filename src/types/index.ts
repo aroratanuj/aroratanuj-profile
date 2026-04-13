@@ -25,6 +25,8 @@ export interface Certification {
   name: string;
   issuer: string;
   year?: string;
+  verificationUrl?: string;
+  credentialId?: string;
 }
 
 export interface Metric {

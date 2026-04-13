@@ -1,4 +1,4 @@
-import { Project, Skill, Certification, Metric } from '../types';
+import { Project, Skill, Metric } from '../types';
 import { sourcefuseExperience } from './experience/sourcefuse';
 import { hicxExperience } from './experience/hicx';
 import { baswarePMExperience } from './experience/baswarePM';
@@ -65,28 +65,9 @@ export const skills: Skill[] = [
   }
 ];
 
-export const certifications: Certification[] = [
-  {
-    name: 'Certified SAFe® 5 PO/PM',
-    issuer: 'Scaled Agile',
-    year: '2021'
-  },
-  {
-    name: 'Certified Product Owner',
-    issuer: 'Scrum Alliance',
-    year: '2017'
-  },
-  {
-    name: 'Certified Scrum Master',
-    issuer: 'Scrum Alliance',
-    year: '2015'
-  },
-  {
-    name: 'ITIL v5 Foundation',
-    issuer: 'APMG International',
-    year: '2013'
-  }
-];
+import { certifications } from './certifications';
+
+export { certifications };
 
 export const metrics: Metric[] = [
   { value: '4', label: 'Products Launched' },
