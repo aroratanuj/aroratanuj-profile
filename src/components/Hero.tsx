@@ -1,5 +1,5 @@
 import { contactInfo } from '../data/contact';
-import { totalExperienceText, totalYears } from '../data/portfolio';
+import { totalExperienceText } from '../data/portfolio';
 
 const Hero = () => {
   const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
