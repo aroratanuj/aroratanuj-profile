@@ -43,14 +43,14 @@ const Hero = () => {
             <a
               href="#experience"
               onClick={(e) => handleSmoothScroll(e, 'experience')}
-              className="bg-primary text-white px-6 md:px-8 py-2.5 md:py-3 rounded-full text-xs md:text-sm font-semibold hover:bg-indigo-700 transition-all duration-300 no-underline shadow-lg hover:shadow-xl hover:-translate-y-1"
+              className="bg-primary text-white px-6 md:px-8 py-2.5 md:py-3 rounded-full text-xs md:text-sm font-semibold hover:bg-indigo-700 transition-all duration-300 no-underline shadow-lg hover:shadow-xl hover:-translate-y-1 text-center"
             >
               View Experience
             </a>
             <a
               href={contactInfo.resumePath}
               download={contactInfo.resumeFilename}
-              className="bg-primary text-white px-6 md:px-8 py-2.5 md:py-3 rounded-full text-xs md:text-sm font-semibold hover:bg-indigo-700 transition-all duration-300 no-underline shadow-lg hover:shadow-xl hover:-translate-y-1 inline-flex items-center gap-2"
+              className="bg-primary text-white px-6 md:px-8 py-2.5 md:py-3 rounded-full text-xs md:text-sm font-semibold hover:bg-indigo-700 transition-all duration-300 no-underline shadow-lg hover:shadow-xl hover:-translate-y-1 inline-flex items-center justify-center gap-2"
             >
               <svg className="w-3 h-3 md:w-4 md:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
