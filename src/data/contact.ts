@@ -19,7 +19,7 @@ export const socialLinks = [
   },
   {
     platform: 'WhatsApp',
-    url: `https://wa.me/${contactInfo.whatsapp.replace(/\D/g, '')}`,
+    url: `https://wa.me/${contactInfo.whatsapp.replace(/\D/g, '')}?text=Hi%20Tanuj,%20I%20would%20like%20to%20connect%20with%20you&lang=en`,
     icon: 'whatsapp'
   },
   {
