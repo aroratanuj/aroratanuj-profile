@@ -9,24 +9,27 @@ export interface Project {
 
 export const projectsData: Project[] = [
   {
-    title: 'Professional Services Automation Platform',
-    role: 'Product Manager',
-    description: 'B2B SaaS platform for professional services automation with cloud-native solutions',
+    title: 'Invoice Processing- Procure to Pay',
+    role: 'Scrum Resource / Scrum Master',
+    description: 'Basware is one of the largest e-invoicing providers globally and provides full XML e-invoicing for both receiving and sending electronic invoices.',
     responsibilities: [
       'Module owner (Master, Fastscan, Setup)',
-      'Developer and Technical specification writer',
-      'Code Review and team task management',
+      'Developer',
+      'Writing Technical specification',
+      'Code Review',
+      'Team task management',
       'Handling customer Escalations'
     ],
     impact: 'Reduced revenue leakage through real-time payment processing, improved project margins via data-driven resource allocation',
     technologies: ['AWS', 'SaaS', 'B2B', 'Cloud-Native', 'Automation']
   },
   {
-    title: 'Supplier Experience Portal (SXP)',
+    title: 'SXP – Supplier Experience Portal',
     role: 'Product Manager',
     description: 'HICX provides supplier management solutions to help some of the largest companies in the world build productive working relationships with all their suppliers by providing an integrated portal for their tasks across various ERP platforms.',
     responsibilities: [
-      'Bug Triage and Requirement analysis',
+      'Bug Triage',
+      'Requirement analysis',
       'BRD and other Discovery phase documents',
       'Collaborating with stakeholders to ensure delivery according to the agreed DoD',
       'Liaison b/w teams, both external and internal, for cross-product collaboration'
@@ -48,7 +51,7 @@ export const projectsData: Project[] = [
     technologies: ['FinTech', 'AP Automation', 'Process Optimization', 'Multi-Product Suite']
   },
   {
-    title: 'BaswareOne - P2P Solution',
+    title: 'BaswareOne',
     role: 'Domain Expert',
     description: 'BaswareOne is another P2P solution by Basware, which enables small and medium enterprises to automate P2P workflows without getting too much complexity.',
     responsibilities: [
