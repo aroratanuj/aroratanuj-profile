@@ -42,7 +42,15 @@ const Navbar = () => {
     e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const navbarHeight = document.querySelector('nav')?.offsetHeight || 0;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navbarHeight - 20;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+
       setActiveSection(id);
       setMobileMenuOpen(false); // Close mobile menu on click
     }
