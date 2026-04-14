@@ -4,11 +4,9 @@ const FloatingButtons = () => {
   const handleContactClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
 
-    // Open WhatsApp smart URL (opens app on mobile, web on desktop) with English
     const whatsappUrl = `https://wa.me/${contactInfo.whatsapp.replace(/\D/g, '')}?text=Hi%20Tanuj,%20I%20would%20like%20to%20connect%20with%20you&lang=en`;
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
 
-    // Scroll to contact section
     const element = document.getElementById('contact');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -17,7 +15,6 @@ const FloatingButtons = () => {
 
   return (
     <div className="fixed right-4 bottom-4 md:right-8 md:bottom-8 z-50 flex flex-col gap-3">
-      {/* Download CV Button */}
       <a
         href={contactInfo.resumePath}
         download={contactInfo.resumeFilename}
@@ -29,7 +26,6 @@ const FloatingButtons = () => {
         </svg>
       </a>
 
-      {/* Contact Button */}
       <a
         href="#contact"
         onClick={handleContactClick}

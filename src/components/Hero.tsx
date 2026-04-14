@@ -1,6 +1,4 @@
 import { contactInfo } from '../data/contact';
-import { totalExperienceText } from '../data/portfolio';
-import { pmExperienceText } from '../data/portfolio';
 import { heroData, getHeroTitle, getAboutMeParagraphs } from '../data/hero';
 
 const Hero = () => {

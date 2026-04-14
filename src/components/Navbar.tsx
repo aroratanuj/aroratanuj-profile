@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 
+const SCROLL_DETECTION_OFFSET = 200;
+
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('about');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -14,9 +16,8 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 200;
+      const scrollPosition = window.scrollY + SCROLL_DETECTION_OFFSET;
 
-      // Find which section is currently in view
       for (const link of navLinks) {
         const element = document.getElementById(link.id);
         if (element) {
@@ -33,7 +34,7 @@ const Navbar = () => {
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll(); // Initial check
+    handleScroll();
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, [navLinks]);
@@ -42,17 +43,9 @@ const Navbar = () => {
     e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
-      const navbarHeight = document.querySelector('nav')?.offsetHeight || 0;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - navbarHeight - 20;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       setActiveSection(id);
-      setMobileMenuOpen(false); // Close mobile menu on click
+      setMobileMenuOpen(false);
     }
   };
 

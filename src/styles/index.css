@@ -6,6 +6,11 @@
   body {
     @apply bg-white text-gray-900 antialiased;
   }
+
+  /* Account for sticky navbar when scrolling to sections */
+  section[id] {
+    scroll-margin-top: 100px;
+  }
 }
 
 @layer utilities {
