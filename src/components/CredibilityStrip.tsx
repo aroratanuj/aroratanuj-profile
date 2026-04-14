@@ -2,7 +2,7 @@ import { metrics } from '../data/portfolio';
 
 const CredibilityStrip = () => {
   return (
-    <section className="bg-[#0a0e27] px-8 py-20 text-white">
+    <section className="bg-[#0a0e27] px-8 py-12 text-white">
       <div className="max-w-[1100px] mx-auto grid grid-cols-5 gap-8 text-center">
         {metrics.map((metric, index) => (
           <div key={index} className="flex flex-col items-center">

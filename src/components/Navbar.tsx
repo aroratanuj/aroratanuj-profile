@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState('about');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Home', href: '#', id: 'home' },
     { name: 'About', href: '#about', id: 'about' },
     { name: 'Experience', href: '#experience', id: 'experience' },
     { name: 'Skills', href: '#skills', id: 'skills' },
@@ -17,16 +16,8 @@ const Navbar = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 200;
 
-      // Check if we're at the top of the page
-      if (scrollPosition < 300) {
-        setActiveSection('home');
-        return;
-      }
-
       // Find which section is currently in view
       for (const link of navLinks) {
-        if (link.id === 'home') continue; // Skip home, already handled above
-
         const element = document.getElementById(link.id);
         if (element) {
           const { offsetTop, offsetHeight } = element;
@@ -62,8 +53,8 @@ const Navbar = () => {
       <div className="max-w-[1200px] mx-auto px-4 md:px-6 flex justify-between items-center">
         <div className="font-extrabold text-lg tracking-tight text-gray-900">
           <a
-            href="#"
-            onClick={(e) => handleNavClick(e, 'home')}
+            href="#about"
+            onClick={(e) => handleNavClick(e, 'about')}
             className="no-underline text-gray-900 hover:text-primary transition-colors duration-300"
           >
             TA

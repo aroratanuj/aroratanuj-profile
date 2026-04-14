@@ -1,15 +1,15 @@
-import { experiences } from '../data/portfolio';
+import { experiences, totalExperienceText } from '../data/portfolio';
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-24 bg-white">
+    <section id="experience" className="py-16 bg-white">
       <div className="max-w-[1200px] mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-extrabold text-gray-900 mb-4">
             Professional Experience
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            A journey through 16+ years of product management and software engineering excellence
+            A journey through {totalExperienceText} of product management and software engineering excellence
           </p>
         </div>
 

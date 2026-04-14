@@ -2,7 +2,7 @@ import { projects } from '../data/portfolio';
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 md:py-32 bg-gray-50">
+    <section id="projects" className="py-12 md:py-20 bg-gray-50">
       <div className="max-w-[1100px] mx-auto px-4 md:px-6 lg:px-8">
         <h2 className="text-2xl md:text-3xl lg:text-[2.2rem] font-extrabold mb-8 md:mb-16 tracking-tight text-center md:text-left">
           Featured Projects

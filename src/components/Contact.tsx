@@ -2,7 +2,7 @@ import { socialLinks, contactInfo } from '../data/contact';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-24 bg-gradient-to-br from-indigo-500 to-purple-600 text-white">
+    <section id="contact" className="py-16 bg-gradient-to-br from-indigo-500 to-purple-600 text-white">
       <div className="max-w-[1200px] mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-extrabold mb-4">
