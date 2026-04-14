@@ -2,9 +2,9 @@ import { experiences, totalExperienceText } from '../data/portfolio';
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-16 bg-white">
-      <div className="max-w-[1200px] mx-auto px-6">
-        <div className="text-center mb-16">
+    <section id="experience" className="py-10 bg-white">
+      <div className="max-w-[1200px] mx-auto px-4 md:px-6">
+        <div className="text-center mb-4 md:mb-6">
           <h2 className="text-3xl font-extrabold text-gray-900 mb-4">
             Professional Experience
           </h2>
@@ -17,9 +17,9 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="bg-gradient-to-br from-white to-gray-50 border border-gray-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              className="bg-gradient-to-br from-white to-gray-50 border border-gray-200 rounded-2xl p-4 md:p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-6">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">
                     {exp.position}

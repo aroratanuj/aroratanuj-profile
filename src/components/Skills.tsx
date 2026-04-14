@@ -35,36 +35,36 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-12 bg-gradient-to-br from-slate-50 to-white">
+    <section id="skills" className="py-8 bg-gradient-to-br from-slate-50 to-white">
       <div className="max-w-[1200px] mx-auto px-4 md:px-6">
-        <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-3 md:mb-4">
+        <div className="text-center mb-3 md:mb-4">
+          <h2 className="text-xl md:text-3xl font-extrabold text-gray-900 mb-2 md:mb-3">
             Skills & Expertise
           </h2>
-          <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto">
+          <p className="text-gray-600 text-sm md:text-lg max-w-2xl mx-auto">
             Comprehensive toolkit for product management and technical leadership
           </p>
         </div>
 
         {/* Domain Expertise - Highlighted Section */}
-        <div className="mb-8 md:mb-12">
-          <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-xl mb-6">
-            <div className="text-center mb-6">
-              <div className="inline-flex items-center justify-center gap-2 md:gap-3 bg-white/20 text-white px-4 md:px-6 py-2 md:py-3 rounded-full mb-3 md:mb-4">
+        <div className="mb-3 md:mb-4">
+          <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-xl mb-4">
+            <div className="text-center mb-4 md:mb-3">
+              <div className="inline-flex items-center justify-center gap-2 md:gap-3 bg-white/20 text-white px-4 md:px-6 py-2 md:py-3 rounded-full mb-2 md:mb-3">
                 <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                 </svg>
                 <span className="text-white font-bold text-sm md:text-lg">Domain Expertise</span>
               </div>
-              <h3 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-white mb-2 md:mb-3">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-extrabold text-white mb-1 md:mb-2">
                 Specialized Industry Knowledge
               </h3>
-              <p className="text-white/90 text-sm md:text-lg max-w-3xl mx-auto">
+              <p className="text-white/90 text-xs md:text-sm md:text-lg max-w-3xl mx-auto">
                 Deep expertise across critical business processes and enterprise domains, delivering strategic value through comprehensive understanding of industry workflows and pain points.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3 lg:gap-4">
               {domainExpertise.map((domain, index) => (
                 <div
                   key={index}
@@ -90,7 +90,7 @@ const Skills = () => {
         </div>
 
         {/* Traditional Skills Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-3 lg:gap-4">
           {skills.map((skillGroup, index) => (
             <div
               key={index}

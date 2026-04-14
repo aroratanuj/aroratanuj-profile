@@ -1,3 +1,5 @@
+import SEO from './components/SEO';
+import ATSOptimizer from './components/ATSOptimizer';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CredibilityStrip from './components/CredibilityStrip';
@@ -13,6 +15,8 @@ import FloatingButtons from './components/FloatingButtons';
 function App() {
   return (
     <div className="min-h-screen bg-white">
+      <SEO />
+      <ATSOptimizer />
       <Navbar />
       <Hero />
       <CredibilityStrip />

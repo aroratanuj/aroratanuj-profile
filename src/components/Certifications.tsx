@@ -2,13 +2,13 @@ import { certifications } from '../data/portfolio';
 
 const Certifications = () => {
   return (
-    <section className="py-10 md:py-16 bg-white">
+    <section className="py-6 md:py-10 bg-white">
       <div className="max-w-[1200px] mx-auto px-4 md:px-6">
-        <h2 className="text-xl md:text-3xl font-extrabold text-gray-900 mb-4 md:mb-8 text-center">
+        <h2 className="text-lg md:text-3xl font-extrabold text-gray-900 mb-3 md:mb-6 text-center">
           Certifications
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-4">
           {certifications.map((cert, index) => (
             <div
               key={index}

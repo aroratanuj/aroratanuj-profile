@@ -13,13 +13,13 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-16 bg-white">
+    <section id="education" className="py-8 md:py-12 bg-white">
       <div className="max-w-[1200px] mx-auto px-4 md:px-6">
-        <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-6 md:mb-8 text-center">
+        <h2 className="text-xl md:text-3xl font-extrabold text-gray-900 mb-4 md:mb-4 text-center">
           Education
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
           {education.map((edu, index) => (
             <div
               key={index}

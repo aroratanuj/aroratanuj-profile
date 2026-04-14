@@ -24,7 +24,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="mt-8 pt-8 border-t border-gray-200">
+            <div className="mt-4 pt-4 border-t border-gray-200">
               <h3 className="text-lg font-bold text-gray-900 mb-4">
                 Key Areas of Expertise:
               </h3>

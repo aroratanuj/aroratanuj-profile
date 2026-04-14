@@ -1,39 +1,40 @@
 import { contactInfo } from '../data/contact';
-import { totalExperienceText, pmExperienceText } from '../data/portfolio';
+import { totalExperienceText } from '../data/portfolio';
+import { pmExperienceText } from '../data/portfolio';
 
 const Hero = () => {
   return (
-    <section id="about" className="min-h-screen flex items-start bg-gradient-to-br from-slate-50 via-white to-indigo-50 pt-16 md:pt-20 pb-8">
-      <div className="max-w-[1200px] mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-start">
+    <section id="about" className="min-h-screen flex items-center bg-gradient-to-br from-slate-50 via-white to-indigo-50 py-20">
+      <div className="max-w-[1200px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div className="order-2 lg:order-1 text-center lg:text-left">
-          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-3 md:px-4 py-2 rounded-full text-xs md:text-sm font-semibold mb-4 md:mb-6">
-            <svg className="w-3 h-3 md:w-4 md:h-4" fill="currentColor" viewBox="0 0 24 24">
+          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
             </svg>
             <span className="hidden sm:inline">Available for opportunities</span>
             <span className="sm:hidden">Available</span>
           </div>
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-gray-900 leading-tight mb-4 md:mb-6">
-            Hi, I'm <span className="text-primary">{contactInfo.name}</span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+            <span className="text-primary">{contactInfo.name}</span> – Product Leader | B2B SaaS Expert
           </h1>
 
-          <h2 className="text-base md:text-xl lg:text-2xl text-gray-600 font-semibold mb-4 md:mb-6">
-            {contactInfo.title} | {totalExperienceText} in IT
+          <h2 className="text-xl md:text-2xl text-gray-600 font-semibold mb-6">
+            {contactInfo.title} with {totalExperienceText} in IT and {pmExperienceText} in Product Management
           </h2>
 
-          <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-6 md:mb-8 max-w-xl mx-auto lg:mx-0">
+          <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
             Specializing in AI-enabled, analytics-driven, cloud-based products at scale.
           </p>
 
           {/* About Me Content */}
-          <div className="mt-8 text-left">
-            <h3 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-6">
+          <div className="mt-6 text-left">
+            <h3 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4">
               About Me
             </h3>
 
-            <div className="space-y-6 text-gray-700 leading-relaxed text-justify">
+            <div className="space-y-4 text-gray-700 leading-relaxed text-justify">
               <p>
                 Product Manager with <strong className="text-primary">{totalExperienceText} in IT</strong> and <strong className="text-primary">{pmExperienceText} in product management</strong>. Specializing in <strong className="text-primary">AI-enabled, analytics-driven, cloud-based products</strong> at scale. Deep expertise in enterprise B2B SaaS platforms, with a focus on transforming complex business workflows into intuitive user experiences.
               </p>
@@ -47,11 +48,11 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="mt-8 pt-8 border-t border-gray-200">
-              <h4 className="text-lg font-bold text-gray-900 mb-4">
+            <div className="mt-6 pt-6 border-t border-gray-200">
+              <h4 className="text-lg font-bold text-gray-900 mb-3">
                 Key Areas of Expertise:
               </h4>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {[
                   'AI-enabled products',
                   'Analytics-driven solutions',
@@ -82,16 +83,17 @@ const Hero = () => {
             <div className="relative">
               <img
                 src="/tanuj.png"
-                alt={contactInfo.name}
-                className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full object-cover object-top border-4 border-white shadow-2xl"
+                alt="Tanuj Arora - Product Manager with 18+ years of IT experience and 10+ years in product management, specializing in AI-enabled, analytics-driven, cloud-based B2B SaaS products"
+                className="w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full object-cover object-top border-4 border-white shadow-2xl"
+                loading="eager"
               />
             </div>
           </div>
 
           {/* Quick Facts */}
-          <div className="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-3xl p-8 text-white w-full max-w-md">
-            <h3 className="text-2xl font-bold mb-6">Quick Facts</h3>
-            <div className="space-y-4">
+          <div className="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl md:rounded-3xl p-6 text-white w-full max-w-md">
+            <h3 className="text-xl md:text-2xl font-bold mb-4">Quick Facts</h3>
+            <div className="space-y-3">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
