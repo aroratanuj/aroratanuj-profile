@@ -1,8 +1,9 @@
 import { Experience } from '../../types';
 
 export const sourcefuseExperience: Experience = {
-  company: 'SourceFuse India Pvt. Ltd',
+  company: 'SourceFuse India Pvt. Ltd.',
   position: 'Product Manager',
+ location: ' Chandigarh(IN)',
   duration: 'August 2024 – Present',
   startDate: '2024-08',
   description: 'Strategic digital transformation company, AWS Premier Tier Services Partner focused on cloud-native SaaS solutions. Driving product roadmap for Professional Services Automation (PSA) B2B SaaS platform.',

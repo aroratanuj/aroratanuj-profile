@@ -7,6 +7,7 @@ export interface Experience {
   website?: string;
   startDate?: string;
   endDate?: string;
+  location?: string;
 }
 
 export interface Project {

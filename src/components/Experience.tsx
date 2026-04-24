@@ -37,26 +37,23 @@ const Experience = () => {
                 {/* Clickable Header */}
                 <button
                   onClick={() => toggleExperience(index)}
-                  className="w-full p-4 md:p-6 flex flex-col md:flex-row md:justify-between md:items-start gap-4 bg-gradient-to-r hover:from-indigo-50 hover:to-transparent transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  className="w-full p-4 md:p-6 flex items-start justify-between gap-4 bg-gradient-to-r hover:from-indigo-50 hover:to-transparent transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                   aria-expanded={isExpanded}
                 >
                   <div className="flex-1 text-left">
                     <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-xl md:text-2xl font-bold text-gray-900 flex items-center gap-2">
+                      <h3 className="text-xl md:text-2xl font-bold text-gray-900">
                         {exp.position}
-                        <svg
-                          className={`w-5 h-5 text-primary transition-transform duration-300 flex-shrink-0 ${isExpanded ? 'rotate-180' : ''}`}
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          aria-hidden="true"
-                        >
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                        </svg>
                       </h3>
-                      <span className="text-xs md:text-sm font-medium text-indigo-600 bg-indigo-100 px-3 py-1 rounded-full">
-                        {isExpanded ? 'Click to collapse' : 'Click to view details'}
-                      </span>
+                      <svg
+                        className={`w-5 h-5 text-primary transition-transform duration-300 flex-shrink-0 ${isExpanded ? 'rotate-180' : ''}`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
                     </div>
                     <div className="flex flex-wrap items-center gap-3 mb-2">
                       {exp.website ? (
@@ -79,15 +76,16 @@ const Experience = () => {
                       )}
                       <span className="text-gray-300">|</span>
                       <span className="text-gray-600 font-medium text-sm">
+                        {exp.location}
+                      </span>
+                      <span className="text-gray-300">|</span>
+                      <span className="text-gray-600 font-medium text-sm">
                         {exp.duration}
                       </span>
                     </div>
                     <p className="text-gray-600 text-sm md:text-base leading-relaxed line-clamp-2">
                       {exp.description}
                     </p>
-                  </div>
-                  <div className="flex-shrink-0 bg-primary text-white px-4 py-2 rounded-full text-xs md:text-sm font-semibold text-center">
-                    {index === 0 ? 'Current' : 'Previous'}
                   </div>
                 </button>
 

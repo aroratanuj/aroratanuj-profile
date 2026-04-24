@@ -17,11 +17,11 @@ export const heroData = {
     title: 'About Me',
     paragraphs: [
       {
-        text: 'Visionary Product Leader and Strategic innovator with an excellent track record of {totalExperience} architecting and deploying transformative B2B SaaS solutions. Demonstrated expertise in orchestrating cross-functional ecosystems to deliver mission-critical procurement and spend management platforms that drive organizational value and competitive differentiation.',
-        highlighted: ['Visionary Product Leader', 'Strategic innovator', '{totalExperience}', 'transformative B2B SaaS solutions', 'cross-functional ecosystems', 'procurement and spend management platforms']
+        text: 'Visionary Product Leader and Strategic Innovator with an excellent track record of {totalExperience} architecting and deploying transformative B2B SaaS solutions. Demonstrated expertise in orchestrating cross-functional ecosystems to deliver mission-critical procurement and spend management platforms that drive organizational value and competitive differentiation.',
+        highlighted: ['Visionary Product Leader', 'Strategic Innovator', '{totalExperience}', 'transformative B2B SaaS solutions', 'cross-functional ecosystems', 'procurement and spend management platforms']
       },
       {
-        text: 'Seasoned practitioner in the strategic sourcing, procurement, and invoicing domains, with proven mastery in designing sophisticated end-to-end workflows- encompassing vendor selection and RFx management, purchase order orchestration, contract administration, e-invoicing compliance, and automated PO-Invoice reconciliation.',
+        text: 'Seasoned practitioner in the strategic sourcing, procurement, and invoicing domains, with proven mastery in designing sophisticated end-to-end workflows, encompassing vendor selection and RFx management, purchase order orchestration, contract administration, e-invoicing compliance, and automated PO-Invoice reconciliation.',
         highlighted: ['strategic sourcing, procurement, and invoicing domains', 'end-to-end workflows', 'vendor selection and RFx management', 'purchase order orchestration', 'e-invoicing compliance', 'automated PO-Invoice reconciliation']
       },
       {
@@ -35,14 +35,14 @@ export const heroData = {
   keyAreas: {
     title: 'Key Areas of Expertise',
     areas: [
-      'AI-enabled products',
-      'Analytics-driven solutions',
-      'Cloud-based products at scale',
-      'Enterprise B2B SaaS platforms',
-      'Cross-functional team leadership',
-      'Agile delivery methodologies',
+      'AI-enabled Products',
+      'Analytics-driven Solutions',
+      'Cloud-based Products at Scale',
+      'Enterprise B2B SaaS Platforms',
+      'Cross-functional Team Leadership',
+      'Agile Delivery Methodologies',
       'Complete Source to Pay domain (Sourcing, Procurement, Invoicing)',
-      'Supplier master data management'
+      'Supplier Master Data Management'
     ]
   },
 

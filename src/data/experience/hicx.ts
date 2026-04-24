@@ -2,7 +2,8 @@ import { Experience } from '../../types';
 
 export const hicxExperience: Experience = {
   company: 'HICX',
-  position: 'Product Manager (Remote)',
+  position: 'Product Manager',
+  location: 'Remote',
   duration: 'July 2023 – August 2024',
   startDate: '2023-07',
   endDate: '2024-08',
