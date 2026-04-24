@@ -4,8 +4,8 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CredibilityStrip from './components/CredibilityStrip';
 import Experience from './components/Experience';
-import Projects from './components/Projects';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
 import Education from './components/Education';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
@@ -21,8 +21,8 @@ function App() {
       <Hero />
       <CredibilityStrip />
       <Experience />
-      <Projects />
       <Skills />
+      <Projects />
       <Education />
       <Certifications />
       <Contact />

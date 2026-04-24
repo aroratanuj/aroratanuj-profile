@@ -75,28 +75,30 @@ const Hero = () => {
         </div>
 
         {/* Bottom Section - Key Areas + Quick Facts */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 items-stretch">
           {/* Key Areas of Expertise (7 columns - wider) */}
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 flex flex-col h-full">
             <h3 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-gray-900 mb-3 md:mb-4 text-center md:text-left">
               {heroData.keyAreas.title}
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-2">
-              {heroData.keyAreas.areas.map((expertise, index) => (
-                <div key={index} className="flex items-center gap-2 md:gap-3 bg-indigo-50 px-3 md:px-4 py-2 md:py-3 rounded-xl">
-                  <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-primary rounded-full flex-shrink-0"></span>
-                  <span className="text-gray-700 text-xs md:text-sm font-medium">{expertise}</span>
-                </div>
-              ))}
+            <div className="bg-white border-2 border-gray-200 rounded-2xl md:rounded-3xl p-4 md:p-6 flex-1">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-2">
+                {heroData.keyAreas.areas.map((expertise, index) => (
+                  <div key={index} className="flex items-center gap-2 md:gap-3 bg-indigo-50 px-3 md:px-4 py-2 md:py-3 rounded-xl">
+                    <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-primary rounded-full flex-shrink-0"></span>
+                    <span className="text-gray-700 text-xs md:text-sm font-medium">{expertise}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
           {/* Quick Facts (5 columns - narrower) */}
-          <div className="lg:col-span-5">
+          <div className="lg:col-span-5 flex flex-col h-full">
             <h3 className="text-xl md:text-2xl lg:text-3xl font-extrabold text-gray-900 mb-3 md:mb-4 text-center md:text-left">
               {heroData.quickFacts.title}
             </h3>
-            <div className="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl md:rounded-3xl p-4 md:p-6 text-white">
+            <div className="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl md:rounded-3xl p-4 md:p-6 text-white flex-1">
               <div className="space-y-2 md:space-y-3">
                 {heroData.quickFacts.facts.map((fact, index) => (
                   <div key={index} className="flex items-center gap-3 md:gap-4">
