@@ -61,6 +61,33 @@ export const projectsData: Project[] = [
     ],
     impact: 'Improved P2P workflow automation for SMEs, enhanced solution design and compliance',
     technologies: ['P2P', 'SME Solutions', 'Workflow Automation', 'Compliance Management']
+  },
+  {
+    title: 'Omnia – Professional Services Automation Tool',
+    role: 'Product Manager',
+    description: 'Omnia is a Professional Services Automation platform that manages the full lifecycle of client engagements, from contract setup through resource allocation, invoicing, and financial reporting. It unifies core delivery functions across SOWs, projects, clients, milestones, employees, and financials, with integrations spanning CRM, HRMS, billing, and BI tools.',
+    responsibilities: [
+      'Triaged and prioritized reported bugs for timely resolution',
+      'Analyzed and translated business requirements into actionable specs',
+      'Authored BRDs and discovery-phase documentation',
+      'Partnered with stakeholders to deliver against the agreed Definition of Done',
+      'Served as liaison between internal and external teams for cross-product collaboration'
+    ],
+    impact: 'Enabled leadership to move beyond manual MIS processes to real-time reporting on financial health and operational throughput, supporting high-confidence, data-driven decisions',
+    technologies: ['PSA', 'B2B SaaS', 'CRM Integration', 'HRMS Integration', 'BI & Reporting']
+  },
+  {
+    title: 'RFx and Contract Manager',
+    role: 'Product Manager / SME',
+    description: 'A sourcing solution built for a major telecom company to manage the full RFx lifecycle and contract administration, enabling strategic sourcing teams to run vendor selection, negotiations, and contract governance within a single platform.',
+    responsibilities: [
+      'Serving as Subject Matter Expert for the client\'s sourcing solution',
+      'Partnering with cross-functional teams to shape the product roadmap',
+      'Defining features to help organizations manage spend effectively and drive cost savings',
+      'Streamlining procurement operations through platform capabilities'
+    ],
+    impact: 'Supports the client in managing spend effectively, driving cost savings, and streamlining end-to-end procurement operations',
+    technologies: ['B2B SaaS', 'RFx Management', 'Contract Lifecycle Management', 'Strategic Sourcing']
   }
 ];
 

@@ -23,32 +23,9 @@ export const totalMonths = experienceSummary.totalMonths;
 export const pmExperienceText = pmExperienceSummary.formattedText;
 export const pmYears = pmExperienceSummary.totalYears;
 
-export const projects: Project[] = [
-  {
-    title: 'Professional Services Automation Platform',
-    description: 'B2B SaaS platform for professional services automation with cloud-native solutions',
-    impact: 'Reduced revenue leakage through real-time payment processing, improved project margins via data-driven resource allocation',
-    technologies: ['AWS', 'SaaS', 'B2B', 'Cloud-Native', 'Automation']
-  },
-  {
-    title: 'Supplier Experience Portal (SXP)',
-    description: 'Enterprise supplier management platform with no-code/low-code capabilities for multi-ERP customers',
-    impact: 'Reduced customer deployment time from weeks to days, improved supplier onboarding and platform adoption',
-    technologies: ['B2B SaaS', 'No-Code/Low-Code', 'ERP Integration', 'Workflow Automation']
-  },
-  {
-    title: 'Travel & Expense Management Suite',
-    description: 'Comprehensive T&E management platform for enterprise CFOs with invoice processing and digitization',
-    impact: 'Reduced customer churn by 10%, cut expense processing time from 45 to 25 seconds',
-    technologies: ['FinTech', 'AP Automation', 'Process Optimization', 'Multi-Product Suite']
-  },
-  {
-    title: 'Automated Testing Framework',
-    description: 'Comprehensive testing frameworks for web and desktop applications to enhance delivery efficiency',
-    impact: 'Improved release verification and product closure processes, enhanced agile development efficiency',
-    technologies: ['Testing Automation', 'Web & Desktop Apps', 'Agile Development', 'Quality Assurance']
-  }
-];
+import { projectsData } from './projects';
+
+export const projects: Project[] = projectsData;
 
 import { skillsData } from './skills';
 
