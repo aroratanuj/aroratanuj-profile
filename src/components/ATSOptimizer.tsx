@@ -1,5 +1,5 @@
 import { contactInfo } from '../data/contact';
-import { skills, certifications } from '../data/portfolio';
+import { skills, certifications, totalExperienceText, pmExperienceText } from '../data/portfolio';
 
 const ATSOptimizer = () => {
   return (
@@ -17,7 +17,7 @@ const ATSOptimizer = () => {
 
       <h2>Professional Summary</h2>
       <p>
-        Senior Product Manager with 18+ years of IT experience and 10+ years in product management.
+        Senior Product Manager with {totalExperienceText} of IT experience and {pmExperienceText} in product management.
         Expert in AI-enabled, analytics-driven, cloud-based B2B SaaS products at scale.
         Proven track record of delivering high-impact product launches that drive measurable business outcomes.
         Reduced customer churn by 10% and cut expense processing time by 44%.
@@ -59,7 +59,7 @@ const ATSOptimizer = () => {
       <h2>Technical Keywords</h2>
       <p>
         Product Management, B2B SaaS, AI-Enabled Products, Analytics-Driven, Cloud-Based Products,
-        Travel & Expense, Procure to Pay, Invoicing, Sourcing, Enterprise B2B, Agile Delivery,
+        Travel & Expense, Procurement, Procure to Pay, Invoicing, Sourcing, Enterprise B2B, Agile Delivery,
         Product Lifecycle Management, Cross-Functional Collaboration, SAFe, Scrum Master, Product Owner,
         Databricks, Generative AI, Machine Learning, UX Design, Leadership, Python, JavaScript,
         React, TypeScript, AWS, Cloud Computing, Data Analytics, User Experience, Agile Methodologies,

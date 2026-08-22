@@ -50,36 +50,17 @@ export const projects: Project[] = [
   }
 ];
 
-export const skills: Skill[] = [
-  {
-    category: 'Product Management',
-    skills: ['Product Management', 'Requirement Gathering', 'Market Analysis', 'Roadmap Planning', 'Prioritization', 'Ideation', 'Product Lifecycle Management']
-  },
-  {
-    category: 'Leadership & Collaboration',
-    skills: ['Cross-functional Collaboration', 'Stakeholder Management', 'Customer Feedback Loop', 'Risk Management', 'Critical Thinking', 'Decision-Making']
-  },
-  {
-    category: 'Technical & Development',
-    skills: ['Quality Assurance', 'Usability Testing', 'Prototyping', 'B2B SaaS', 'Agile Delivery', 'AI-Enabled Products', 'Cloud-Based Products']
-  },
-  {
-    category: 'Professional Skills',
-    skills: ['Continuous Learning', 'Problem-Solving', 'Revenue Cycle Workflows', 'Backlog Ownership', 'Sprint Planning', 'Feature Acceptance']
-  }
-];
+import { skillsData } from './skills';
+
+export const skills: Skill[] = skillsData;
 
 import { certifications } from './certifications';
 
 export { certifications };
 
-export const metrics: Metric[] = [
-  { value: '4', label: 'Products Launched' },
-  { value: '4', label: 'Companies' },
-  { value: '95%', label: 'Customer Satisfaction' },
-  { value: '10%', label: 'Churn Reduction' },
-  { value: '44%', label: 'Efficiency Gain' }
-];
+import { metricsData } from './metrics';
+
+export const metrics: Metric[] = metricsData;
 
 import { socialLinks as centralizedSocialLinks } from './contact';
 

@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { totalExperienceText, pmExperienceText } from '../data/portfolio';
 
 interface SEOProps {
   title?: string;
@@ -10,9 +11,9 @@ interface SEOProps {
 }
 
 const SEO = ({
-  title = "Tanuj Arora – Product Manager | B2B SaaS | AI-Enabled Products | 18+ Years Experience",
-  description = "Senior Product Manager with 18+ years in IT and 10+ years in product management. Expert in AI-enabled, analytics-driven, cloud-based B2B SaaS products. Specializing in Travel & Expense, Procure to Pay, Invoicing, and enterprise workflows.",
-  keywords = "Product Manager, B2B SaaS, AI-enabled products, analytics-driven, cloud-based products, Travel & Expense, Procure to Pay, Invoicing, Sourcing, enterprise B2B, agile delivery, product lifecycle management, cross-functional collaboration, SAFe, Scrum Master, Product Owner, Databricks, Generative AI, machine learning",
+  title = `Tanuj Arora – Product Manager | B2B SaaS | AI-Enabled Products | ${totalExperienceText} Experience`,
+  description = `Senior Product Manager with ${totalExperienceText} in IT and ${pmExperienceText} in product management. Expert in AI-enabled, analytics-driven, cloud-based B2B SaaS products. Specializing in Travel & Expense, Procurement, Procure to Pay, Invoicing, and enterprise workflows.`,
+  keywords = `Product Manager, B2B SaaS, AI-enabled products, analytics-driven, cloud-based products, Travel & Expense, Procurement, Procure to Pay, Invoicing, Sourcing, enterprise B2B, agile delivery, product lifecycle management, cross-functional collaboration, SAFe, Scrum Master, Product Owner, Databricks, Generative AI, machine learning`,
   ogTitle,
   ogDescription,
   ogImage = "https://aroratanuj.netlify.app/tanuj.png"

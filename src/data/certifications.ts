@@ -2,7 +2,7 @@ export interface Certification {
   name: string;
   issuer: string;
   year: string;
-  verificationUrl: string;
+  verificationUrl?: string;
   credentialId?: string;
 }
 
@@ -26,6 +26,11 @@ export const certifications: Certification[] = [
     issuer: 'APMG International',
     year: '2013',
     verificationUrl: 'https://drive.google.com/file/d/0B4qRi3nHL6KPZXlYRTNOMUxfQXc/view?usp=sharing&resourcekey=0-THQcccqsb7jr9dyG8LNhGQ'
+  },
+  {
+    name: 'Certified SAFe® 5 PO/PM',
+    issuer: 'Scaled Agile',
+    year: '2021'
   },
   {
     name: 'Generative AI Overview for Project Managers',

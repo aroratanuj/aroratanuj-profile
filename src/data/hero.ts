@@ -17,16 +17,16 @@ export const heroData = {
     title: 'About Me',
     paragraphs: [
       {
-        text: 'Visionary Product Leader and Strategic Innovator with an excellent track record of {totalExperience} architecting and deploying transformative B2B SaaS solutions. Demonstrated expertise in orchestrating cross-functional ecosystems to deliver mission-critical procurement and spend management platforms that drive organizational value and competitive differentiation.',
-        highlighted: ['Visionary Product Leader', 'Strategic Innovator', '{totalExperience}', 'transformative B2B SaaS solutions', 'cross-functional ecosystems', 'procurement and spend management platforms']
+        text: 'Product Manager with {totalExperience} of IT experience and {pmExperience} in product ownership and product management for enterprise B2B SaaS platforms. Proven ability to translate complex business needs into epics, user stories, and acceptance criteria, delivering AI-enabled, analytics-driven, cloud-based products at scale.',
+        highlighted: ['{totalExperience}', '{pmExperience}', 'enterprise B2B SaaS platforms', 'epics, user stories, and acceptance criteria', 'AI-enabled, analytics-driven, cloud-based products']
       },
       {
-        text: 'Seasoned practitioner in the strategic sourcing, procurement, and invoicing domains, with proven mastery in designing sophisticated end-to-end workflows, encompassing vendor selection and RFx management, purchase order orchestration, contract administration, e-invoicing compliance, and automated PO-Invoice reconciliation.',
-        highlighted: ['strategic sourcing, procurement, and invoicing domains', 'end-to-end workflows', 'vendor selection and RFx management', 'purchase order orchestration', 'e-invoicing compliance', 'automated PO-Invoice reconciliation']
+        text: 'Extensive experience in revenue cycle–like operational workflows, requirements analysis, backlog ownership, sprint planning, and feature acceptance. Skilled at working as a proxy PM for offshore scrum teams, bridging business strategy and technical execution across distributed engineering organizations.',
+        highlighted: ['revenue cycle–like operational workflows', 'backlog ownership, sprint planning, and feature acceptance', 'proxy PM for offshore scrum teams']
       },
       {
-        text: 'Recognized for translating complex business imperatives into elegant product solutions that empower enterprises to achieve operational excellence, cost optimization, and strategic supplier partnerships. A catalyst for innovation who bridges the intersection of technology, commerce, and organizational strategy to unlock exponential growth trajectories.',
-        highlighted: ['elegant product solutions', 'operational excellence', 'cost optimization', 'strategic supplier partnerships', 'technology, commerce, and organizational strategy']
+        text: 'Strong collaborator across product, engineering, data, and operations, with a consistent track record of driving on-time, high-quality releases that translate into measurable business outcomes — from reducing customer churn by 10% to improving process efficiency by 44%.',
+        highlighted: ['product, engineering, data, and operations', 'on-time, high-quality releases', 'reducing customer churn by 10%', 'improving process efficiency by 44%']
       }
     ]
   },
@@ -67,7 +67,7 @@ export const heroData = {
       },
       {
         icon: 'certificate',
-        value: '10 Certifications',
+        value: '11 Certifications',
         description: 'Professional Credentials'
       }
     ]
