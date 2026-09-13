@@ -10,12 +10,14 @@ export const sourcefuseExperience: Experience = {
   website: 'https://www.sourcefuse.com/',
   achievements: [
     'Drive product roadmap for a Professional Services Automation (PSA) B2B SaaS platform',
+    'Directly manage a team of 2-3 Product Managers, including hiring, performance management, and mentoring on PM processes and onboarding to new projects',
     'Acting as SME for a telecom company on their procurement solution',
     'Lead sprint planning, backlog management, and retrospectives for cross-functional teams',
     'Partner with engineering to explore technical innovations and system integrations',
     'Collaborate with design/engineering to validate user needs via discovery research',
     'Work with customer success to integrate user feedback into product decisions',
     'Define success metrics and monitor product adoption for continuous iteration',
+    'Actively use Claude to build rapid prototypes and UI mocks for early stakeholder and client approvals, saving design team time and effort and speeding up the SDLC',
     'Zoho Books Integration: Real-time payment processing that reduced revenue leakage and accelerated billing cycles',
     'Team Configuration Module: Automated staffing solution improving project margins through data-driven resource allocation',
     'Owned full product lifecycle from requirements through release readiness and UAT'
